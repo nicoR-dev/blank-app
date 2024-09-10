@@ -13,7 +13,7 @@ genre = st.radio(
 
 if genre == "High":
     st.write("You selected high, $30,000+")
-else if genre == "Medium":
+else: if genre == "Medium":
     st.write("You selected medium, $10,000-$20,000")
 else
     st.write("You selected low, less than $10,000")
