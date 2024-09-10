@@ -2,16 +2,18 @@ import streamlit as st
 
 st.title('Test')
 genre = st.radio(
-    "What's your favorite movie genre",
-    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+    "What is your price range",
+    [":High", "Medium", "Low:"],
     captions=[
-        "Laugh out loud.",
-        "Get the popcorn.",
-        "Never stop learning.",
+        "$30,000+",
+        "$10,000-$20,000",
+        "Below $10,000",
     ],
 )
 
-if genre == ":rainbow[Comedy]":
-    st.write("You selected comedy.")
-else:
-    st.write("You didn't select comedy.")
+if genre == "High":
+    st.write("You selected high, $30,000+")
+else if genre == "Medium":
+    st.write("You selected medium, $10,000-$20,000")
+else
+    st.write("You selected low, less than $10,000")
