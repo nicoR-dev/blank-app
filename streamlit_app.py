@@ -2,11 +2,19 @@ import streamlit as st
 
 st.title("🎈 My new app")
 
-st.title("Hello, Streamlit!")
+import streamlit as st
 
-name = st.text_input("What's your name?")
+genre = st.radio(
+    "What's your favorite movie genre",
+    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+    captions=[
+        "Laugh out loud.",
+        "Get the popcorn.",
+        "Never stop learning.",
+    ],
+)
 
-if st.button("Submit"):
-    st.write(f"Hello, {name}!")
-
-
+if genre == ":rainbow[Comedy]":
+    st.write("You selected comedy.")
+else:
+    st.write("You didn't select comedy.")
