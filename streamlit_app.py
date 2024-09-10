@@ -1,6 +1,13 @@
 import streamlit as st
 
 st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+price = st.radio(
+    'Choose your price range:'.
+    ['Low: 7,000-10,000', 'Medium: 10,000-20,000', 'High']
+    captions=[
+        '7,000-10,000',
+        '10,000-20,000',
+        '20,000+',
+    ],
 )
+
