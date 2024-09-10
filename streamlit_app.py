@@ -18,6 +18,5 @@ housing = st.radio(
 
 if housing == "Else": 
     housingElse = st.text_input("What are you planning?")
-    st.form_submit_button("Submit")
     
 st.write("You selected:", priceRange)
