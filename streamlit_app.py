@@ -12,7 +12,7 @@ priceRange = st.radio(
 )
 
 housing = st.radio(
-    "What type of housing would you like?"
+    "What type of housing would you like?",
     ["On-campus", "Off-campus", "Else"]
 )
 
