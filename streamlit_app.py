@@ -10,4 +10,13 @@ priceRange = st.radio(
         "Below $10,000",
     ],
 )
+
+housing = st.radio(
+    "What type of housing would you like?",
+    ["On-campus", "Off-campus", "Else"]
+)
+
+if housing == "Else": 
+    housingElse = st.text_input("What are you planning?")
+    
 st.write("You selected:", priceRange)
