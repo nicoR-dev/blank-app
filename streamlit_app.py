@@ -3,6 +3,9 @@ import streamlit as st
 #price range & housing info
 st.title('Test')
 
+#name of tabs 
+tab1, tab2 = st.tabs("college a", "college b")
+
 #sidebar to select different different settings.
 with st.sidebar: 
     priceRange = st.radio(
@@ -22,6 +25,7 @@ with st.sidebar:
     if housing == "Else": 
         housingElse = st.text_input("What are you planning?")
 
+#tabs :)
     with tab1:
         st.header("college a")
         
