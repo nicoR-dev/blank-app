@@ -3,11 +3,6 @@ import streamlit as st
 #price range & housing info
 st.title('Test')
 
-housing = st.radio(
-    "What type of housing would you like?",
-    ["On-campus", "Off-campus", "Else"]
-)
-
 #sidebar to select different different settings.
 with st.sidebar: 
     priceRange = st.radio(
@@ -19,9 +14,14 @@ with st.sidebar:
             "Below $10,000",
         ],
     )
-
-
-if housing == "Else": 
-    housingElse = st.text_input("What are you planning?")
+    housing = st.radio(
+        "What type of housing would you like?",
+        ["On-campus", "Off-campus", "Else"]
+    )
     
-st.write("You selected:", priceRange)
+    if housing == "Else": 
+        housingElse = st.text_input("What are you planning?")
+        
+    st.write("You selected:", priceRange)
+
+
