@@ -4,7 +4,7 @@ import streamlit as st
 st.title('Test')
 
 #name of tabs 
-tab1, tab2 = st.tabs("college a", "college b")
+tab1, tab2 = st.tabs(["college a", "college b"])
 
 #sidebar to select different different settings.
 with st.sidebar: 
