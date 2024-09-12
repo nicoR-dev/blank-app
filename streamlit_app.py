@@ -21,7 +21,14 @@ with st.sidebar:
     
     if housing == "Else": 
         housingElse = st.text_input("What are you planning?")
+
+    with tab1:
+        st.header("college a")
         
+    with tab2:
+        st.header("college b")
+    
+    
     st.write("You selected:", priceRange)
 
 
