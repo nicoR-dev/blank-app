@@ -8,6 +8,7 @@ tab1, tab2 = st.tabs(["college a", "college b"])
 
 #sidebar to select different different settings.
 with st.sidebar: 
+    #get price range
     priceRange = st.radio(
         "What is your price range",
         ["High", "Medium", "Low"],
@@ -17,9 +18,13 @@ with st.sidebar:
             "Below $10,000",
         ],
     )
+    #get housing type
     housing = st.radio(
         "What type of housing would you like?",
         ["On-campus", "Off-campus", "Else"]
+
+        #write result 4 price range
+        st.write("You selected:", priceRange)
     )
     
     if housing == "Else": 
@@ -36,6 +41,5 @@ with tab2:
 container = st.container(border=True)
 container.write("college")
     
-st.write("You selected:", priceRange)
 
 
