@@ -42,11 +42,9 @@ row1 = st.columns(3)
 row2 = st.columns(3)
 
 for colNum in row1:
-    tile = col.container(height=175)
+    tile = colNum.container(height=175)
     tile.title("college")
 
-container = st.container(border=True)
-container.write("college")
 
 
 
