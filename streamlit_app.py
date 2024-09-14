@@ -38,8 +38,8 @@ with tab2:
         st.header("college b")
 
 #containers
-row1 = st.container(3)
-row2 = st.container(3)
+row1 = st.columns(3)
+row2 = st.columns(3)
 
 for colNum in row1:
     tile = col.container(height=175)
