@@ -38,8 +38,15 @@ with tab2:
         st.header("college b")
 
 #containers
+row1 = st.container(3)
+
+for colNum in row1:
+    tile = col.container(height=175)
+    tile.title("college")
+
 container = st.container(border=True)
 container.write("college")
-    
+
+
 
 
