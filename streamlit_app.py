@@ -28,12 +28,13 @@ with st.sidebar:
 #tabs :)
     with tab1:
         st.header("college a")
-        with st.container: 
-            st.write("word")
         
     with tab2:
         st.header("college b")
-    
+
+#containers
+container = st.container(border=True)
+container.write("college")
     
     st.write("You selected:", priceRange)
 
