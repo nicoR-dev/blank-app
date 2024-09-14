@@ -39,6 +39,7 @@ with tab2:
 
 #containers
 row1 = st.container(3)
+row2 = st.container(3)
 
 for colNum in row1:
     tile = col.container(height=175)
