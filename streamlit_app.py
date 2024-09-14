@@ -18,9 +18,10 @@ with st.sidebar:
             "Below $10,000",
         ],
     )
+    
     #get housing type
     housing = st.radio(
-        "What type of housing would you like?",
+        "What type of housing would you like?"
         ["On-campus", "Off-campus", "Else"]
 
         #write result 4 price range
