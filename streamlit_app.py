@@ -28,6 +28,8 @@ with st.sidebar:
 #tabs :)
     with tab1:
         st.header("college a")
+        with st.container: 
+            st.write("word")
         
     with tab2:
         st.header("college b")
