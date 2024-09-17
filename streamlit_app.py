@@ -43,7 +43,7 @@ row2 = st.columns(3)
 row3 = st.columns(3)
 
 for colNum in row1 + row2 + row3:
-    tile = colNum.container(height=175)
+    colNum.container(height=175)
     tile.title("college")
 
 
