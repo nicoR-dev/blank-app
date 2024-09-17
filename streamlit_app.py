@@ -44,7 +44,7 @@ row3 = st.columns(3)
 
 for colNum in row1 + row2 + row3:
     colNum.container(height=175)
-    tile.title("college")
+    st.title("college")
 
 
 
