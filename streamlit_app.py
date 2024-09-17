@@ -20,7 +20,8 @@ with st.sidebar:
             "$26,000",
             "$30,000",
             ">$30,000",
-        ]
+        ],
+        value=("<$10,000", ">$30,000"),
     )
     
     #get housing type
@@ -28,11 +29,9 @@ with st.sidebar:
         "What type of housing would you like?",
         ["On-campus", "Off-campus", "Else"]
     )
-    
-    #write result 4 price range
-    st.write("You selected:", priceRange)
-    if housing == "Else": 
-        housingElse = st.text_input("What are you planning?")
+
+    #your price range
+    st.write("Your price range:", value)
 
 #tabs :)
 with tab1:
