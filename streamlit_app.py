@@ -38,16 +38,16 @@ with tab2:
         st.header("college b")
 
 #containers
-row1 = st.columns(3)
-row2 = st.columns(3)
-row3 = st.columns(3)
-
-for colNum in row1 + row2 + row3:
-    tile=colNum.container(height=175)
-    tile.title("college")
-
 container = st.container(border=True)
 container.title('coleg')
+container.write('coleg picture comin son')
+
+container = st.container(border=True)
+container.title('university of berkley')
+container.write('coleg picture comin son')
+
+container = st.container(border=True)
+container.title('university of stockton')
 container.write('coleg picture comin son')
 
 
