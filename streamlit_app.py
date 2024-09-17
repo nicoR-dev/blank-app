@@ -31,7 +31,7 @@ with st.sidebar:
     )
 
     #your price range
-    st.write("Your price range:", value)
+    st.write("Your price range:", start_price, end_price)
 
 #tabs :)
 with tab1:
