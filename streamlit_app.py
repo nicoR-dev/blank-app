@@ -9,14 +9,18 @@ tab1, tab2 = st.tabs(["college a", "college b"])
 #sidebar to select different different settings.
 with st.sidebar: 
     #get price range
-    priceRange = st.radio(
-        "What is your price range",
-        ["High", "Medium", "Low"],
-        captions=[
-            "$30,000+",
-            "$10,000-$20,000",
-            "Below $10,000",
-        ],
+    start_price, end_price = st.select_slider(
+        "Select your price range",
+        options=[
+            "<$10,000",
+            "$10,000",
+            "$14,000",
+            "$18,000",
+            "$22,000",
+            "$26,000",
+            "$30,000",
+            ">$30,000",
+        ]
     )
     
     #get housing type
