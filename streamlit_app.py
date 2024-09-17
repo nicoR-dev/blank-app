@@ -47,7 +47,7 @@ for colNum in row1 + row2 + row3:
     tile.title("college")
 
 container = st.container(border=True)
-container.write('coleg')
+container.title('coleg')
 
 
 
