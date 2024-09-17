@@ -48,6 +48,7 @@ for colNum in row1 + row2 + row3:
 
 container = st.container(border=True)
 container.title('coleg')
+container.write('coleg picture comin son')
 
 
 
