@@ -29,9 +29,14 @@ with st.sidebar:
         "What type of housing would you like?",
         ["On-campus", "Off-campus", "Else"]
     )
+    if housing="else":
+        housingElse = st.text_input("What are you planning?")
+        
 
     #your price range
     st.write("Your price range:", start_price, " and ", end_price)
+    #your housing type 
+    st.write("Your housing place:", housingElse)
 
 #tabs :)
 with tab1:
