@@ -29,7 +29,7 @@ with st.sidebar:
         "What type of housing would you like?",
         ["On-campus", "Off-campus", "Else"]
     )
-    if housing="else":
+    if housing=="else":
         housingElse = st.text_input("What are you planning?")
         
 
