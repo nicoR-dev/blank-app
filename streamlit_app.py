@@ -31,12 +31,12 @@ with st.sidebar:
     )
     if housing=="else":
         housingElse = st.text_input("What are you planning?")
+        #your housing type 
+        st.write("Your housing place:", housingElse)
         
 
     #your price range
     st.write("Your price range:", start_price, " and ", end_price)
-    #your housing type 
-    st.write("Your housing place:", housingElse)
 
 #tabs :)
 with tab1:
