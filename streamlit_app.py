@@ -35,6 +35,9 @@ with st.sidebar:
     #your price range
     st.write("Your price range:", start_price, " and ", end_price)
 
+    #checkboxes for stars
+    rating = st.checkbox("1 Star", "2 Star", "3 Star", "4 Star", "5 Star")
+
     
 #tabs :)
 with tab1:
