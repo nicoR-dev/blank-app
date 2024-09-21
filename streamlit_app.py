@@ -31,16 +31,26 @@ with st.sidebar:
     )
     if housing == "Else": 
         housingElse = st.text_input("What are you planning?")
-
-    #your price range
-    st.write("Your price range:", start_price, " and ", end_price)
-
+        
     #checkboxes for stars
     rating1 = st.checkbox("1 Star")
     rating2 = st.checkbox("2 Star")
     rating3 = st.checkbox("3 Star")
     rating4 = st.checkbox("4 Star")
     rating5 = st.checkbox("5 Star")
+
+    #sponsors text entry
+    sponsors = st.text_input("What is the college's sponsor?")
+
+    #state/location 
+    state = st.selectbox(
+        "What state is the college/university in?", 
+        ("AL", "AK", "AS", "AZ", "AR", "CA", "CO", "CT")
+    )
+    
+    #your price range
+    st.write("Your price range:", start_price, " and ", end_price)
+
     
 #tabs :)
 with tab1:
