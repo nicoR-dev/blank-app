@@ -40,6 +40,7 @@ with st.sidebar:
     rating5 = st.checkbox("5 Star")
 
     #sponsors text entry
+    st.write("What sponsors that college?")
     sponsors = st.text_input("What is the college's sponsor?")
 
     #state/location 
