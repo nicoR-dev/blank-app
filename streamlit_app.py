@@ -51,6 +51,8 @@ with st.sidebar:
     #your price range
     st.write("Your price range:", start_price, " and ", end_price)
 
+    #write the state value 
+    st.write(state)
     
 #tabs :)
 with tab1:
