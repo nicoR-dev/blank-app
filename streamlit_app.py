@@ -1,4 +1,11 @@
 import streamlit as st
+import numpy as np
+
+#add data 
+college_data = np.genfromtxt(
+    'data/us-colleges-and-universities.csv', delimiter=',',
+    names=True, dtype=None, encoding='UTF'
+)
 
 #price range & housing info
 st.title('Test')
