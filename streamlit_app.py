@@ -7,6 +7,8 @@ college_data = np.genfromtxt(
     names=True, dtype=None, encoding='UTF'
 )
 
+print(college_data)
+
 #price range & housing info
 st.title('Test')
 
