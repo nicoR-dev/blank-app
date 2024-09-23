@@ -11,7 +11,7 @@ import numpy as np
 # print(college_data)
 import pandas as pd
 coldata=pd.read_excel(
-    '../data2/us-colleges-and-universities.xlsx', 
+    'data/us-colleges-and-universities.xlsx', 
 )
 coldata.head()
 
