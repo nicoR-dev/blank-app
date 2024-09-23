@@ -2,13 +2,20 @@ import streamlit as st
 import numpy as np
 
 #add data 
-college_data = np.genfromtxt(
-    'data/us-colleges-and-universities.csv', delimiter=';,',
-    names=True, dtype=None, encoding='UTF'
-)
-# college_data
-st.write(college_data)
+# college_data = np.genfromtxt(
+#     'data/us-colleges-and-universities.csv', delimiter=';,',
+#     names=True, dtype=None, encoding='UTF'
+# )
+# # college_data
+# st.write(college_data)
 # print(college_data)
+import pandas as pd
+coldata=pd.read_excel(
+    '../data2/us-colleges-and-universities.xlsx', 
+)
+coldata.head()
+
+
 
 #price range & housing info
 st.title('Test')
