@@ -6,9 +6,9 @@ college_data = np.genfromtxt(
     'data/us-colleges-and-universities.csv', delimiter=';,',
     names=True, dtype=None, encoding='UTF'
 )
-college_data
-
-print(college_data)
+# college_data
+st.write(college_data)
+# print(college_data)
 
 #price range & housing info
 st.title('Test')
