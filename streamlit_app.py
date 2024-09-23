@@ -2,13 +2,7 @@ import streamlit as st
 import numpy as np
 
 #add data 
-# college_data = np.genfromtxt(
-#     'data/us-colleges-and-universities.csv', delimiter=';,',
-#     names=True, dtype=None, encoding='UTF'
-# )
-# # college_data
-# st.write(college_data)
-# print(college_data)
+
 import pandas as pd
 coldata=pd.read_excel(
     'data/us-colleges-and-universities.xlsx', 
