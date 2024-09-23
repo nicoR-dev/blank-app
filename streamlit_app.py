@@ -3,12 +3,12 @@ import numpy as np
 
 #add data 
 
-import pandas as pd
-coldata=pd.read_excel(
-    'data/us-colleges-and-universities.xlsx', 
-)
-coldata.head()
-
+# import pandas as pd
+# coldata=pd.read_excel(
+#     'data/us-colleges-and-universities.xlsx', 
+# )
+# coldata.head()
+st.write("blah")
 
 
 #price range & housing info
