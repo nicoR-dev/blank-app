@@ -3,9 +3,10 @@ import numpy as np
 
 #add data 
 college_data = np.genfromtxt(
-    'data/us-colleges-and-universities.csv', delimiter=',',
+    'data/us-colleges-and-universities.csv', delimiter=';,',
     names=True, dtype=None, encoding='UTF'
 )
+college_data
 
 print(college_data)
 
