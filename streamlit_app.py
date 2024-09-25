@@ -19,6 +19,10 @@ tab1, tab2 = st.tabs(["college a", "college b"])
 
 #sidebar to select different different settings.
 with st.sidebar: 
+    #college name
+    st.write("Type the college name")
+    col_name = st.text_input("What is the college's name?")
+    
     #get price range
     start_price, end_price = st.select_slider(
         "Select your price range",
@@ -58,6 +62,22 @@ with st.sidebar:
     state = st.selectbox(
         "What state is the college/university in?", 
         ("AL", "AK", "AS", "AZ", "AR", "CA", "CO", "CT")
+    )
+    
+    #Admission requirements 
+    admis_reqs1=st.checkbox('Extracurricular Activities')
+    admis_reqs2=st.checkbox('Standardized Test Scores')
+    admis_reqs3=st.checkbox('Student GPA')
+    admis_reqs4=st.checkbox('Personal Statment/Essay')
+    admis_reqs5=st.checkbox('Recommendation Letters')
+    admis_reqs6=st.checkbox('Invested Interest')
+    admis_reqs7=st.checkbox('Class Rank')
+    admis_reqs8=st.checkbox('Good Behavior"')
+
+    #Programs
+    col_program = st.selectbox(
+        "What are the college's programs?", 
+        ("Buisness", "Bio Engineering", "Health Sciences", "Computer Engineering", "Civil Engineering", "Engineering", "Biology", "Education")
     )
     
     #your price range
