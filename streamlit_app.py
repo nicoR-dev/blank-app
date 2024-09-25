@@ -79,7 +79,9 @@ with st.sidebar:
         "What are the college's programs?", 
         ("Business", "Bio Engineering", "Health Sciences", "Computer Engineering", "Civil Engineering", "Engineering", "Biology", "Education")
     )
-    
+
+
+    st.header("You've chosen:")
     #your price range
     st.write("Your price range:", start_price, " and ", end_price)
 
