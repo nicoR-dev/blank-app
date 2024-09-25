@@ -77,7 +77,7 @@ with st.sidebar:
     #Programs
     col_program = st.selectbox(
         "What are the college's programs?", 
-        ("Buisness", "Bio Engineering", "Health Sciences", "Computer Engineering", "Civil Engineering", "Engineering", "Biology", "Education")
+        ("Business", "Bio Engineering", "Health Sciences", "Computer Engineering", "Civil Engineering", "Engineering", "Biology", "Education")
     )
     
     #your price range
