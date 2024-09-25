@@ -7,8 +7,8 @@ import numpy as np
 # coldata=pd.read_excel(
 #     'data/us-colleges-and-universities.xlsx', 
 # )
-# coldata.head()
-st.write("blah")
+# # coldata.head()
+# st.write("blah")
 
 
 #price range & housing info
@@ -84,7 +84,7 @@ with st.sidebar:
     st.write("Your price range:", start_price, " and ", end_price)
 
     #write the state value 
-    st.write(state)
+    st.write("The college's state:", state)
     
 #tabs :)
 with tab1:
