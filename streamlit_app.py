@@ -14,6 +14,21 @@ import numpy as np
 #price range & housing info
 st.title('Test')
 
+#extra options
+with st.expander('Extra settings.'): 
+    col_sports = st.selectbox(
+        "What are the college's sports?",
+        ('Soccer', 'Hockey', 'Basketball')
+    )
+    col_intern = st.selectbox(
+        "What are the college's internships?"
+        ('blah')
+    )
+    col_degree = st.radio(
+        "What type of degree do you want?", 
+        ['Engineering', 'Biology', 'Nursing', 'Astronomy']
+    )
+
 #name of tabs 
 tab1, tab2 = st.tabs(["college a", "college b"])
 
@@ -65,6 +80,7 @@ with st.sidebar:
     )
     
     #Admission requirements 
+    st.header("Admission requirements:")
     admis_reqs1=st.checkbox('Extracurricular Activities')
     admis_reqs2=st.checkbox('Standardized Test Scores')
     admis_reqs3=st.checkbox('Student GPA')
@@ -108,11 +124,7 @@ container = st.container(border=True)
 container.title('university of stockton')
 container.write('coleg picture comin son')
 
-with st.expander('Extra settings.'): 
-    col_sports = st.selectbox(
-        "What are the college's sports?",
-        ('Soccer', 'Hockey', 'Basketball')
-    )
+
 
     
 
