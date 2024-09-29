@@ -21,7 +21,7 @@ with st.expander('Extra settings.'):
         ('Soccer', 'Hockey', 'Basketball')
     )
     col_intern = st.selectbox(
-        "What are the college's internships?"
+        "What are the college's internships?",
         ('blah')
     )
     col_degree = st.radio(
