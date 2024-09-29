@@ -110,7 +110,7 @@ container.write('coleg picture comin son')
 
 with st.expander('Extra settings.'): 
     col_sports = st.selectbox(
-        'What are the college's sports?',
+        "What are the college's sports?",
         ('Soccer', 'Hockey', 'Basketball')
     )
 
