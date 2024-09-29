@@ -14,27 +14,29 @@ import numpy as np
 #price range & housing info
 st.title('Test')
 
-#extra options
-with st.expander('Extra settings.'): 
-    col_sports = st.selectbox(
-        "What are the college's sports?",
-        ('Soccer', 'Hockey', 'Basketball')
-    )
-    col_intern = st.selectbox(
-        "What are the college's internships?",
-        ('blah')
-    )
-    col_degree = st.radio(
-        with st.title("What type of degree do you want?"),
-        # "What type of degree do you want?", 
-        ['Engineering', 'Biology', 'Nursing', 'Astronomy']
-    )
+
 
 #name of tabs 
 tab1, tab2 = st.tabs(["college a", "college b"])
 
 #sidebar to select different different settings.
 with st.sidebar: 
+    #extra options
+    with st.expander('Extra settings.'): 
+        col_sports = st.selectbox(
+            "What are the college's sports?",
+            ('Soccer', 'Hockey', 'Basketball')
+        )
+        col_intern = st.selectbox(
+            "What are the college's internships?",
+            ('blah')
+        )
+        col_degree = st.radio(
+            with st.title("What type of degree do you want?"),
+            # "What type of degree do you want?", 
+            ['Engineering', 'Biology', 'Nursing', 'Astronomy']
+        )
+        
     #college name
     st.write("Type the college name")
     col_name = st.text_input("What is the college's name?")
