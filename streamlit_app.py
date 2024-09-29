@@ -80,7 +80,7 @@ with st.sidebar:
         ("Business", "Bio Engineering", "Health Sciences", "Computer Engineering", "Civil Engineering", "Engineering", "Biology", "Education")
     )
 
-
+    
     st.header("You've chosen:")
     #your price range
     st.write("Your price range:", start_price, " and ", end_price)
@@ -108,8 +108,12 @@ container = st.container(border=True)
 container.title('university of stockton')
 container.write('coleg picture comin son')
 
+with st.expander('Extra settings.'): 
+    col_sports = st.selectbox(
+        'What are the college's sports?',
+        ('Soccer', 'Hockey', 'Basketball')
+    )
 
-
-
+    
 
 
