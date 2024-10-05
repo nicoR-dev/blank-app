@@ -126,12 +126,6 @@ container = st.container(border=True)
 container.title('university of stockton')
 container.write('coleg picture comin son')
 
-#added col data
-coldata=pd.read_excel(
-    'data2/us-colleges-and-universities.xlsx'
-)
-coldata.head(10)
-
 
 
 
