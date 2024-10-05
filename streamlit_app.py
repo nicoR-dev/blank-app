@@ -25,7 +25,7 @@ with st.expander('Extra settings.'):
         ('blah')
     )
     col_degree = st.radio(
-        with st.title("What type of degree do you want?"),
+        st.title("What type of degree do you want?"),
         # "What type of degree do you want?", 
         ['Engineering', 'Biology', 'Nursing', 'Astronomy']
     )
