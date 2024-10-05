@@ -127,11 +127,11 @@ container.title('university of stockton')
 container.write('coleg picture comin son')
 
 #added col data
-col-data = np.genfromtxt(
+coldata = np.genfromtxt(
     'us-colleges-and-universities.csv', delimiter=';,', 
     names=False, dtype=None, encoding='UTF'
 )
-col-data
+coldata
 
 
 
