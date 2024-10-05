@@ -36,8 +36,6 @@ tab1, tab2 = st.tabs(["college a", "college b"])
 
 #sidebar to select different different settings.
 with st.sidebar: 
-
-        
     #college name
     st.write("Type the college name")
     col_name = st.text_input("What is the college's name?")
@@ -127,6 +125,14 @@ container.write('coleg picture comin son')
 container = st.container(border=True)
 container.title('university of stockton')
 container.write('coleg picture comin son')
+
+#added col data
+col-data = np.genfromtxt(
+    'us-colleges-and-universities.csv', delimiter=';,', 
+    names=False, dtype=None, encoding='UTF'
+)
+col-data
+
 
 
 
