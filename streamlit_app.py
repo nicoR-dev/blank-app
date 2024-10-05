@@ -127,11 +127,14 @@ container.title('university of stockton')
 container.write('coleg picture comin son')
 
 #added col data
-coldata = np.genfromtxt(
-    'us-colleges-and-universities.csv', delimiter=';,', 
-    names=False, dtype=None, encoding='UTF'
+coldata=pd.read_excel(
+    '../data2/us-colleges-and-universities.xlsx', 
 )
-coldata
+coldata.head(10)
+
+
+
+
 
 
 
